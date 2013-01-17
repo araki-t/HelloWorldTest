@@ -6,9 +6,9 @@ import android.widget.TextView;
 
 public class HelloWorldTest extends ActivityInstrumentationTestCase2<MainActivity> {
 
-    MainActivity activity;
-    TextView view;
-    Object resourceString;
+    private MainActivity activity;
+    private TextView view;
+    private Object resourceString;
     
     @SuppressWarnings("deprecation")
 	public HelloWorldTest() {
