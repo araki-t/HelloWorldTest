@@ -1,0 +1,107 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3494), pid=1336, tid=680
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 6.0_38-b05
+# Java VM: Java HotSpot(TM) Client VM (20.13-b02 mixed mode windows-x86 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x01bb9400):  JavaThread "Unknown thread" [_thread_in_vm, id=680, stack(0x00110000,0x00160000)]
+
+Stack: [0x00110000,0x00160000],  sp=0x0015f86c,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1348ea]
+V  [jvm.dll+0x12f3db]
+V  [jvm.dll+0x1676e]
+V  [jvm.dll+0x17faf]
+V  [jvm.dll+0x27565]
+V  [jvm.dll+0x27da6]
+V  [jvm.dll+0x28155]
+V  [jvm.dll+0x281e9]
+V  [jvm.dll+0x282ac]
+V  [jvm.dll+0x2832a]
+V  [jvm.dll+0x2840d]
+V  [jvm.dll+0x286d9]
+V  [jvm.dll+0x6cdb3]
+V  [jvm.dll+0x6d18c]
+V  [jvm.dll+0xfa77c]
+V  [jvm.dll+0x1190cb]
+V  [jvm.dll+0x9f4c0]
+C  [javaw.exe+0x1657]
+C  [javaw.exe+0x1e2c]
+C  [javaw.exe+0x8614]
+C  [kernel32.dll+0x4d309]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x41603]  RtlInitializeExceptionChain+0x63
+C  [ntdll.dll+0x415d6]  RtlInitializeExceptionChain+0x36
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x01bb9400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=680, stack(0x00110000,0x00160000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00425000 	C:\Program Files\Java\jdk1.6.0_38\jre\bin\javaw.exe
+0x77080000 - 0x771a8000 	C:\Windows\system32\ntdll.dll
+0x76b50000 - 0x76c2c000 	C:\Windows\system32\kernel32.dll
+0x77200000 - 0x772c6000 	C:\Windows\system32\ADVAPI32.dll
+0x75750000 - 0x75813000 	C:\Windows\system32\RPCRT4.dll
+0x76fe0000 - 0x7707d000 	C:\Windows\system32\USER32.dll
+0x771b0000 - 0x771fb000 	C:\Windows\system32\GDI32.dll
+0x75c60000 - 0x75c7e000 	C:\Windows\system32\IMM32.DLL
+0x76ed0000 - 0x76f98000 	C:\Windows\system32\MSCTF.dll
+0x75e40000 - 0x75eea000 	C:\Windows\system32\msvcrt.dll
+0x76fa0000 - 0x76fa9000 	C:\Windows\system32\LPK.DLL
+0x75d30000 - 0x75dad000 	C:\Windows\system32\USP10.dll
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jdk1.6.0_38\jre\bin\msvcr71.dll
+0x6d8c0000 - 0x6db70000 	C:\Program Files\Java\jdk1.6.0_38\jre\bin\client\jvm.dll
+0x73a40000 - 0x73a72000 	C:\Windows\system32\WINMM.dll
+0x75b10000 - 0x75c55000 	C:\Windows\system32\ole32.dll
+0x76c30000 - 0x76cbd000 	C:\Windows\system32\OLEAUT32.dll
+0x74700000 - 0x7473e000 	C:\Windows\system32\OLEACC.dll
+0x75550000 - 0x7557c000 	C:\Windows\system32\apphelp.dll
+0x6d870000 - 0x6d87c000 	C:\Program Files\Java\jdk1.6.0_38\jre\bin\verify.dll
+0x6d3d0000 - 0x6d3ef000 	C:\Program Files\Java\jdk1.6.0_38\jre\bin\java.dll
+0x6d8b0000 - 0x6d8bf000 	C:\Program Files\Java\jdk1.6.0_38\jre\bin\zip.dll
+0x75710000 - 0x75717000 	C:\Windows\system32\PSAPI.DLL
+
+VM Arguments:
+jvm_args: -Dfile.encoding=MS932 -Xbootclasspath:C:\dev\android-sdk\sdk\platforms\android-16\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 51281 -testLoaderClass org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestLoader -loaderpluginname org.eclipse.jdt.junit.runtime -classNames com.example.helloworld.test.HelloWorldTest
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files\Java\jre6\lib\ext\QTJava.zip
+PATH=C:/Program Files/Java/jre6/bin/client;C:/Program Files/Java/jre6/bin;C:/Program Files/Java/jre6/lib/i386;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Common Files\Roxio Shared\DLLShared;C:\Program Files\ESTsoft\ALZip;C:\usr\local\bin;c:\gs\gs7.07\bin;c:\gs\gs7.07\lib;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\QuickTime\QTSystem\;C:\dev\android-sdk.old\;C:\dev\android-sdk\sdk\platform-tools\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files\ESTsoft\ALZip;C:\dev\eclipse;
+USERNAME=araki
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 6, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows Vista Build 6002 Service Pack 2
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 15 stepping 6, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3
+
+Memory: 4k page, physical 2093960k(831364k free), swap 4444960k(1907208k free)
+
+vm_info: Java HotSpot(TM) Client VM (20.13-b02) for windows-x86 JRE (1.6.0_38-b05), built on Nov 14 2012 01:54:26 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Wed Jan 16 16:12:27 2013
+elapsed time: 0 seconds
+
